@@ -1,0 +1,47 @@
+.navbar {
+  background-color: rgba(251,248,245,0.98);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 1.5rem;
+
+  .navbar-nav {
+    .nav-item {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .nav-item a {
+      color: #283c46;
+      padding: 0.7rem;
+
+      &:hover {
+        background-color: #fff;
+        border-radius: 20px;
+      }
+    }
+
+    .nav-item.navbar-profile-icon {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: #8067c3;
+      align-self: center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      a {
+        text-align: center;
+        align-self: center;
+        color: #fff;
+
+        &:hover {
+          background-color: transparent;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
