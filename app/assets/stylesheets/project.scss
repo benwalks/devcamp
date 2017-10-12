@@ -12,11 +12,15 @@
   }
 }
 
-.project-col {
+.project-title {
+  margin-bottom: 3rem;
+}
+
+.project-col, .feature-col {
   margin-bottom: 1.5rem;
 }
 
-.project-card {
+.project-card, .feature-card {
   display: block;
   color: #283c46;
   background-color: #fff;
@@ -37,6 +41,25 @@
 
   p {
     font-size: 1.2rem;
+  }
+}
+
+.feature-card {
+  h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+  }
+  img {
+    text-align: center;
+    display: block;
+    width: 48px;
+    margin: 0 auto 1rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    text-align: center;
   }
 }
 

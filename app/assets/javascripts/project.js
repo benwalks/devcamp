@@ -38,6 +38,7 @@ document.addEventListener('turbolinks:load', function () {
     var errorTextNode = document.createTextNode('Name must not be blank')
     errorNode.classList.add('invalid-feedback')
     errorNode.appendChild(errorTextNode)
+    // Add the error message node using this ugly line of code. Thanks StackOverflow!
     projectName.parentNode.insertBefore(errorNode, projectName.nextSibling)
   })
 })

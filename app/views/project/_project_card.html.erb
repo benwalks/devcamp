@@ -1,8 +1,8 @@
 <div class="col-md-4 project-col">
-  <a href="#" class="project-card">
+  <%= link_to(project, class: "project-card") do %>
     <h4><%= project.name %></h4>
     <% if project.description  %>
       <p><%= project.description %></p>
     <% end %>
-  </a>
+  <% end %>
 </div>
