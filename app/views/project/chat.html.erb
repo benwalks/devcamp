@@ -1,0 +1,16 @@
+<main class="container home">
+  <%= render "project_nav.html", feature_name: "Campfire" %>
+  <div class="chat-wrapper feature-card">
+    <div id="chat-contents" class="chat-contents">
+      <% @messages.each do |m| %>
+        <%= render "message/message.html", message: m %>
+      <% end %>
+    </div>
+    <%= form_for @message, html: {id: "new-message-form", class: "chat-form"} do |f| %>
+      <%= f.hidden_field :project_id, value: @project.id %>
+      <div class="form-group">
+        <%= f.text_field :content, class: "form-control", id: "message-input", placeholder: "Say something riveting!", autoFocus: true %>
+      </div>
+    <% end %>
+  </div>
+</main>

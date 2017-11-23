@@ -78,3 +78,22 @@
 .is-hidden {
   display: none;
 }
+
+.project-nav {
+  text-align: center;
+  font-size: 1.6rem;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.chat-wrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+
+  .chat-form {
+    margin-top: auto;
+  }
+}
